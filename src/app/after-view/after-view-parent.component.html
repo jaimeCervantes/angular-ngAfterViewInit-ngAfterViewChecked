@@ -1,0 +1,10 @@
+<div class="parent">
+  <h2>Componente padre</h2>
+
+  <div *ngIf="show">
+    <lch-after-view-child></lch-after-view-child>
+  </div>
+  <h4>-- AfterView Logs --</h4>
+  <p><button (click)="reset()">Reset</button></p>
+  <div *ngFor="let msg of logs">{{msg}}</div>
+</div>
